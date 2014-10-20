@@ -1,0 +1,54 @@
+.caption {
+    -webkit-backface-visibility: hidden; /* prevent flash when embedding fiddle */
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+	overflow: hidden;
+	background: #000;
+	img {
+		display: block;
+		max-width: 100%;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-moz-transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
+		&:hover img {opacity: 0.5;}
+	}
+	&::after,
+	&::before {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+		color: #fff;
+	    z-index: 1;
+	    -webkit-transition: -webkit-transform 0.3s ease-in-out; 
+		-moz-transition: -moz-transform 0.3s ease-in-out; 
+		transition: transform 0.3s ease-in-out; 
+	}
+	&::after {
+		content: attr(data-title);
+		top: 0;
+		background: #0083ab;
+		font-size: 40px;
+		font-weight: 300;
+		padding: 30px;
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+	&::before {
+		content: '...' attr(data-description) '...';
+		top: 50%;
+		background: #f27545;
+		font-size: 14px;
+		padding: 20px;
+		-webkit-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		transform: translateY(100%);
+	}
+	&:hover::after,
+	&:hover::before {
+		-webkit-transform: translateY(0%);
+		-moz-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+}
