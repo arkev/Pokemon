@@ -5,7 +5,7 @@
 	overflow: hidden;
 	width: 220px;
 	height: 220px;
-	.datos{position: relative;}
+	position: relative;
 	img {
 		display: block;
 		max-width: 100%;
@@ -13,40 +13,29 @@
 		-moz-transition: opacity 0.3s ease-in-out;
 		transition: opacity 0.3s ease-in-out;
 	}
-	.numnom,
-	.ata {
+	.numnom{
 		position: absolute;
 		width: 100%;
-		height: 50%;
+		height: 100%;
 		color: #fff;
 	    z-index: 1;
-	    -webkit-transition: -webkit-transform 0.3s ease-in-out; 
+	    -webkit-transition: -webkit-all 0.3s ease-in-out; 
 		-moz-transition: -moz-transform 0.3s ease-in-out; 
-		transition: transform 0.3s ease-in-out; 
-		&:hover {
-			-webkit-transform: translateY(0%);
-			-moz-transform: translateY(0%);
-			transform: translateY(0%);
-		}
-	}
-	.numnom {
+		transition: all 0.3s ease-in-out; 
+		opacity: 0;
 		top: 0;
-		background: #0083ab;
-		font-size: 40px;
+		background: #386cb2;
+		font-size:1.5em;
 		font-weight: 300;
-		padding: 30px;
-		-webkit-transform: translateY(-500%);
-		-moz-transform: translateY(-500%);
-		transform: translateY(-500%);
-	}
-	.ata {
-		top: 50%;
-		background: #f27545;
-		font-size: 14px;
-		padding: 20px;
-		-webkit-transform: translateY(100%);
-		-moz-transform: translateY(100%);
-		transform: translateY(100%);
+		margin: 0 auto;
+		text-align: center;
+		text-indent: -500%;
+		&:hover{
+			opacity: .9;
+			text-indent:0;
+		}
+		p{font-size:1.2rem;}
+		h2 span:first-child::before {content: "#";}
 	}
 	&:hover img {opacity: 0.5;}
 }
