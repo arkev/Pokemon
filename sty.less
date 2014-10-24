@@ -1,31 +1,76 @@
+//Variables
+@blanco:#fff;
+@azul:#386cb2;
+@amarillo:#fccc37;
+@mobile:        ~"only screen and (min-width: 320px)";
+@smallTablet:   ~"only screen and (min-width: 569px)";
+@tablet:        ~"only screen and (min-width: 768px)";
+@desktop:       ~"only screen and (min-width: 1024px)";
+
+
+//Mixins
+.transition(@property:all,@duration:0.3s,@timing:ease-in-out){
+	transition: @property @duration @timing;
+}
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 1);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+//Generales
+html {
+  font-size: 6.25%; /* Sets up the Base 10 stuff */
+}
+body{
+  background:@blanco;
+  color:@blanco;
+  .font-size(16);
+}
+
+h1{
+	background: url(images/pokemon_sage.jpg) no-repeat center center scroll transparent;
+	text-indent: -5000%;
+	margin: 0 auto;
+	@media @mobile {
+      height: 230px;
+	  background-size: 100% auto;
+	}
+	@media @smallTablet {
+	    height: 250px;
+		background-size: initial;
+	}
+}
 .pokemon {
-    -webkit-backface-visibility: hidden; /* prevent flash when embedding fiddle */
-	display: inline-block;
-	margin: 10px;
+    backface-visibility: hidden; /* prevent flash when embedding fiddle */
 	overflow: hidden;
 	width: 220px;
 	height: 220px;
 	position: relative;
+	@media @mobile {
+      display:block;
+	  margin: 10px auto;
+	}
+	@media @smallTablet {
+	    display: inline-block;
+		margin: 10px;
+	}
 	img {
 		display: block;
 		max-width: 100%;
-		-webkit-transition: opacity 0.3s ease-in-out;
-		-moz-transition: opacity 0.3s ease-in-out;
-		transition: opacity 0.3s ease-in-out;
+		.transition(opacity, 0.3s, ease-in-ou);
 	}
 	.numnom{
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		color: #fff;
 	    z-index: 1;
-	    -webkit-transition: -webkit-all 0.3s ease-in-out; 
-		-moz-transition: -moz-transform 0.3s ease-in-out; 
-		transition: all 0.3s ease-in-out; 
+	    .transition();
 		opacity: 0;
 		top: 0;
-		background: #386cb2;
-		font-size:1.5em;
+		background:@azul;
+		.font-size(21);
 		font-weight: 300;
 		margin: 0 auto;
 		text-align: center;
@@ -34,8 +79,23 @@
 			opacity: .9;
 			text-indent:0;
 		}
-		p{font-size:1.2rem;}
-		h2 span:first-child::before {content: "#";}
+		p{.font-size(18);}
+		h2 {
+			color: @amarillo;
+			span:first-child::before {content: "#";}
+		}
 	}
 	&:hover img {opacity: 0.5;}
+}
+
+.touch {
+	.pokemon{
+		z-index: 1;
+		&:hover img {opacity: 0;}
+	}
+	.numnom{
+		opacity: 1;
+		text-indent: 0;
+		z-index: 0;
+	}
 }
