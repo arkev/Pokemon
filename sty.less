@@ -59,7 +59,7 @@ h1{
 	img {
 		display: block;
 		max-width: 100%;
-		.transition(opacity, 0.3s, ease-in-ou);
+		.transition(opacity, 0.3s, ease-in-out);
 	}
 	.numnom{
 		position: absolute;
@@ -74,7 +74,7 @@ h1{
 		font-weight: 300;
 		margin: 0 auto;
 		text-align: center;
-		text-indent: -500%;
+		text-indent: -5000%;
 		&:hover{
 			opacity: .9;
 			text-indent:0;
@@ -90,12 +90,23 @@ h1{
 
 .touch {
 	.pokemon{
-		div img{z-index: 1;}
-		&:hover img {opacity: 0;}
+	overflow: hidden;
+		.img {
+			width:100%;
+			height: 100%;
+			opacity: 1;
+			z-index: 1;
+			transform: translateX(0);
+		}
+		&:hover img {
+			opacity: 1;
+			.transition();
+			transform: translateX(-220px);
+		}
 	}
-	.numnom{
+	.numnom, .numnom:hover{
 		opacity: 1;
-		text-indent: 0;
-		z-index: 0;
+		text-indent:0;
+		z-index: -1;
 	}
 }
