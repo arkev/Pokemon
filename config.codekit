@@ -11,7 +11,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_10.jpg": {
 		"fileType": 16384,
@@ -22,7 +22,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_10.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_11.jpg": {
 		"fileType": 16384,
@@ -33,7 +33,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_11.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_12.jpg": {
 		"fileType": 16384,
@@ -132,7 +132,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_20.jpg": {
 		"fileType": 16384,
@@ -253,7 +253,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_30.jpg": {
 		"fileType": 16384,
@@ -297,7 +297,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_5.jpg": {
 		"fileType": 16384,
@@ -308,7 +308,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_6.jpg": {
 		"fileType": 16384,
@@ -319,7 +319,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_6.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_7.jpg": {
 		"fileType": 16384,
@@ -330,7 +330,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_8.jpg": {
 		"fileType": 16384,
@@ -341,7 +341,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_8.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_9.jpg": {
 		"fileType": 16384,
@@ -352,7 +352,7 @@
 		"outputAbbreviatedPath": "\/images\/pokemon_9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pokemon_sage.jpg": {
 		"fileType": 16384,
