@@ -19,7 +19,7 @@ function inicio()
     foliat_imagen.innerHTML= "<img src='images/pokemon_"+foliat.numero+".jpg'>";
     
     //florabri
-    var florabri = new Pokemon("florabri",2,110, 40,"Hierba, Aéreo");
+    var florabri = new Pokemon("Florabri",2,110, 40,"Hierba, Aéreo");
     florabri_nombre.textContent = florabri.nombre;
     florabri_numero.textContent = florabri.numero;
     florabri_vida.textContent =   florabri.vida;
@@ -46,7 +46,7 @@ function inicio()
     kidling_imagen.innerHTML= "<img src='images/pokemon_"+kidling.numero+".jpg'>";
     
     //pyroat
-    var foliat = new Pokemon("Pyroat",5,160, 60,"Fuego, Roca");
+    var pyroat = new Pokemon("Pyroat",5,160, 60,"Fuego, Roca");
     pyroat_nombre.textContent = pyroat.nombre;
     pyroat_numero.textContent = pyroat.numero;
     pyroat_vida.textContent =   pyroat.vida;
@@ -55,7 +55,7 @@ function inicio()
     pyroat_imagen.innerHTML= "<img src='images/pokemon_"+pyroat.numero+".jpg'>";
     
     //flairees
-    var foliat = new Pokemon("Flairees",6,180, 90,"Hierba");
+    var flairees = new Pokemon("Flairees",6,180, 90,"Hierba");
     flairees_nombre.textContent = flairees.nombre;
     flairees_numero.textContent = flairees.numero;
     flairees_vida.textContent =   flairees.vida;
@@ -64,7 +64,7 @@ function inicio()
     flairees_imagen.innerHTML= "<img src='images/pokemon_"+flairees.numero+".jpg'>";
     
     //aguade
-    var foliat = new Pokemon("Aguade",7,150, 25,"Agua");
+    var aguade = new Pokemon("Aguade",7,150, 25,"Agua");
     aguade_nombre.textContent = aguade.nombre;
     aguade_numero.textContent = aguade.numero;
     aguade_vida.textContent =   aguade.vida;
@@ -111,7 +111,7 @@ function inicio()
 }
 
 //Remplazar el evento hover por touchstar
-var myLinks = document.getElementsByClassName('numnom');
+var myLinks = document.getElementsByClassName('img');
 for(var i = 0; i < myLinks.length; i++){
 	myLinks[i].addEventListener('touchstart', function(){this.className = "hover";}, false);
 	myLinks[i].addEventListener('touchend', function(){this.className = "";}, false);
